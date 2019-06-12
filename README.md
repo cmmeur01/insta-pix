@@ -1,59 +1,18 @@
-# instapix
+# [Instapix](https://insta-pix.herokuapp.com/#/)
 
-Koy Saeteurn, Martin Markaj, Sergey Gridin, Chris Meurer
+Instapix is a picture sharing application where users can upload photos, follow other users, and like / comment on each others photos. 
 
-## Background and Overview
-Simple clone of Instagram where users can share photos, follow users to see their photos in a feed, and like / comment on a photo.
+[main-feed]: https://i.imgur.com/9HszVLT.png "Main Feed"
+![main-feed][main-feed]
 
-## Functionality and MVP
-### Images 
-- [ ] Users can upload images
-- [ ] Users can edit images
-- [ ] Photos can have a description (optional)
+### Built With: 
 
-### Following / Photo Feed 
-- [ ] Users can follow other users
-- [ ] Users can unfollow other users
-- [ ] Followed users images appear in photo feed
+* MongoDB
 
-### User profile 
-- [ ] Users have a dashboard (show / change profile picture, see their posts) 
-- [ ] Bio with # posts, # of followers, and # of followees
+* Express
 
-### Likes
-- [ ] Users can like photos from themselves and others
-- [ ] Users can remove their likes from photos
-- [ ] Total count of likes displays per post/image
- 
-### Comments
-- [ ] Users can comment on photos 
-- [ ] Users can delete their comments
+* React / Redux
 
-### Bonus 
-- [ ] Direct messaging between users
+* Node.js
 
-
-## Work Breakdown
-### Monday
-- Initial skeletons for features - Everyone 
-- Deciding on routes for the whole app - Everyone
-- Models / associations - Everyone 
-- Basic photo skeleton - Chris / Sergey
-- Build Sign up / Log in - Martin / Koy
-- Seeding AWS with pictures / users - Sergey
- 
-### Tuesday
-- Users able to upload / edit photos - finish from yesterday - Sergey / Chris
-- User profile - Sergey / Chris
-- Build image feed - Martin / Koy
-
-### Wednesday
-- Complete Monday / Tuesday work - all
-
-### Thursday
-- Comments - Sergey / Chris 
-- Likes - Martin / Koy
-
-### Friday 
-- Finishing touches / styling / bug squashing 
-- DM's if time 
+* AWS S3
