@@ -63,7 +63,6 @@ router.get("/id", (req, res) => {
       })
       .populate('likes')
       .then(post => {
-        // console.log(post.likes[0]);
         let likes = post.likes;
         let comments = post.comments;
         let comment_ids = comments.map(ele => ele._id);
@@ -78,14 +77,6 @@ router.get("/id", (req, res) => {
 
         likesArr = likes.map(like => like._id);
 
-        // console.log(users);
-        // console.log(likes);
-        
-        // likes.forEach((user) =>{
-        //   users.concat(user);
-        // });
-        // users.concat(likes);
-        // console.log(users);
         let finalUsers = {};
         likes.forEach((user) => {
           finalUsers[user._id] = user;
@@ -239,7 +230,6 @@ router.patch('/unlike', (req, res) => {
 });
 
 router.post("/new", (req, res) => {
-  
   const token = req.headers.authorization;
   const user = jwt_decode(token);
   if (user) {
@@ -249,7 +239,6 @@ router.post("/new", (req, res) => {
       description: req.body.description,
       likes: []
     });
-    console.log(newPost);
     newPost.save().then((post) => {
       User.findOne({ _id: post.user })
       .then((user) => {
