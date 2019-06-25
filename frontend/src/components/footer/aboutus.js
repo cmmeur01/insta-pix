@@ -29,7 +29,7 @@ export default function AboutUs() {
             <a href="https://github.com/SergeyGridin">Github</a>
           </p>
           <p>
-            <a href="#">Linkedin</a>
+            Linkedin
           </p>
           <p>
             Email:{" "}
@@ -61,7 +61,7 @@ export default function AboutUs() {
             <a href="https://github.com/martmark">Github</a>
           </p>
           <p>
-            <a href="#">Linkedin</a>
+            Linkedin
           </p>
           <p>
             Email:{" "}

@@ -2,9 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import { fetchExploreUsers } from './../../actions/user_actions';
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import CarouselItem from './carousel-item';
-import FollowButton from "../user_profile/follow_button";
+// import FollowButton from "../user_profile/follow_button";
 
 class Carousel extends React.Component {
   constructor(props) {
